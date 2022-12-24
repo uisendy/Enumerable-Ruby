@@ -11,5 +11,9 @@ module MyEnumerable
     value
   end
 
-
+  def filter
+    value = []
+    each { |n| value.push(n) if yield n }
+    value
+  end
 end
