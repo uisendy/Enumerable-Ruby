@@ -5,5 +5,11 @@ module MyEnumerable
     value
   end
 
+  def any?
+    value = false
+    each { |n| value = true if yield n }
+    value
+  end
+
 
 end
