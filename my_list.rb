@@ -7,7 +7,6 @@ class MyList
     @list = list
   end
 
-
   include MyEnumerable
 
   def each
